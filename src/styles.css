@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: "Exo 2", sans-serif;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	background: #0052d4;
+	background: -webkit-linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+	background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+}
+
+.elements {
+	max-width: 200px;
+	border-radius: 3px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.element {
+	list-style: none;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding: 15px 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 4px;
+	margin-left: 10px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.rect {
+	display: block;
+	width: 30px;
+	height: 20px;
+	background: #0052d4;
+}
+
+.circle {
+	display: block;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	background: #0052d4;
+}
+
+.line {
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #0052d4;
+}
+
+*[draggable="true"] {
+	-moz-user-select: none;
+	-khtml-user-drag: element;
+	cursor: move;
+}
+
+.box {
+	width: 2000px;
+	height: 2000px;
+	background: #eaf1fa;
+}
+
+#iconsBar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 120px;
+	height: 30px;
+}
+
+#iconsBar .fa {
+	display: block;
+	background: #4364f7;
+	border-radius: 10%;
+	padding: 6px;
+	cursor: pointer !important;
+	z-index: 999;
+}
